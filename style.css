@@ -1,0 +1,301 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Tahoma";
+box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:    #340e0e;
+    color: navajowhite;
+}
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("cutebear.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 320px;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 5px;
+}
+nav ul li a{
+
+    color: navajowhite;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f1f05f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size:30px;
+    color:white;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: white;
+}
+.header-text h1 span{
+    color: #f1f05f;
+}
+/*- #f1f05f --> */
+
+/*--- about me -*/
+#about {
+    padding: 80px 0;
+    color: navajowhite;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.Subtitle{
+    font-size: 60px;
+    font-width: 600;
+    color: navajowhite;
+}
+.about-me
+{
+    color: navajowhite;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-Links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: navajowhite;
+}
+.tab-Links::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #efbe41;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-Links.active-link::after{
+    width: 50%;
+}
+.tab-content ul li{
+
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-content ul li span
+{
+    color:    #ffd465;    /* #42000e;*/
+    font-size: 18px;
+
+}
+.tab-content{
+    display: none;
+
+}
+.tab-content.active-tab {
+    display: block;
+}
+
+/* --- project -----*/
+
+#Projects{
+    padding: 30px 0;
+}
+
+
+
+
+.title{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fomart{
+    font-size: 70px;
+}
+
+.Project-list {
+    flex-basis: 60%;
+
+}
+.Project-list-2 img{
+    width: 430px;
+    height: 400px;
+    border-radius: 45px;
+
+}
+.project-list-2 {
+    flex-basis: 35%;
+}
+.sub-title {
+    font-size: 30px;
+    color: navajowhite;
+    font-width: 600;
+}
+
+.Project-list div{
+transition: background 0.5s, transform 0.5s;
+    padding: 100px;
+
+}
+.Project-list:hover{
+    background: #efbe41;
+
+    transform: translateY(-10px);
+
+}
+.space div{
+    border-radius: 7px;
+
+}
+
+/* --CSS for small screen ---*/
+
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    #header{
+        background-image: url(Bear.png);
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+
+    }
+        nav ul {
+            background: #ffd465;
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+
+            }
+        nav ul i{
+            display: block;
+            margin: 25px;
+
+        }
+
+        nav ul .fa-solid{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+
+        .Subtitle{
+            font-size: 40px;
+
+        }
+        .about-col-1, .about-col-2{
+            flex-basis: 100%;
+
+        }
+        .about-col-1{
+            margin-bottom: 30px;
+
+        }
+        .about-col-2{
+            font-size: 14px;
+
+        }
+        .tab-Links{
+            font-size: 16px;
+            margin-right: 20px;
+
+        }
+        .Project-list, .project-list-2 {
+            flex-basis: 100%;
+        }
+        .Project-list{
+            font-size: 14px;
+        }
+        .project-list-2{
+            margin-bottom: 30px;
+
+        }
+        .contact-left{
+            flex-basis: 100%
+
+        }
+
+
+}
