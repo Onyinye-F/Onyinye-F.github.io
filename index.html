@@ -1,118 +1,240 @@
-
-<html>
-     <!--I Faustina Onyinye [400386819] certify that this material is my original work. No other person's work has been used without due acknowledgment
-    I have also not made my work available to anyone else-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>  Faustina Onyinye Lab 1</title>
+    <meta charset="UTF-8">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c6cb9632f.js" crossorigin="anonymous"></script>
 
 </head>
-
 <body>
 
+<div id = "header">
+    <div class = "container">
+        <nav>
+            <img src ="logo.png" class ="logo" >
+            <ul id ="sidemenu">
+                <li> <a href= "#header" >Home</a></li>
+                <li> <a href= "# about" >About</a></li>
+                <li> <a href= "# Projects" >Project</a></li>
+                <li> <a href= "#contact " >Contact</a></li>
 
-    <img 
-    src="myPic.jpg" alt="My Pic" width = "80mm" height ="80mm" align="left">
+                <i class="fa-solid fa-xmark"  onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Automation Engineer</p>
+            <h1> Hello, I'm <span>Onyinye</span> </h1>
+        </div>
+    </div>
+</div>
+<!--- about page-->
+<div id =" about">
+    <div class ="container">
+      <div class = "row">
+         <div class= "about-col-1" > <img src ="myPic.jpg" ></div>
 
-    <div>
-    <p style = "font-family: italics">
-    <h2>&nbsp;&nbsp;&nbsp;&nbsp; Faustina Onyinye Ugwuede</h2>
+         <div class= "about-col-2" >  <h1 class ="Subtitle">  About me </h1>
+          <p class="about-me"> I am dedicated to providing efficient solutions to complex problems. As I continue to grow and build relationships with people, I strive to develop and uplift myself to enrich the lives of people around me to create a promising future for the world and organizations.
+              My motto and something I always tell myself is "Get work done on time, fast, and well done." I value the quality of work and always set my mind to being detailed oriented providing the best output. I believe in a culture of continuous learning and development, an environment that encourages innovation and experimentation.
+              The unceasing advancement in technology will alter the core knowledge and skills individuals possess
+              with the need to upgrade at every level, I always aspire to bring out the best result, be of great value, and continue to grow with an open mindset of consistent learning.
+              Working at the Learning Factory at McMaster University has allowed me to gain experience in how an industry operates, build automated systems that improve production efficiency, develop skills in working with equipment like CMM (Coordinate Measuring Machine), and implement Industry 4.0 to improve operations.
+              I have had the opportunity to start a Smart Systems team where we integrate sensors, analyze data, and make decisions, implement Internet of Things (IoT) to optimize operations.
 
-    </p>
+              Having been a research assistant at EcoCar has given me insight into the world of autonomous vehicles, I have been able to work with models like the physics and plant models to develop programs using Simulink and eliminate errors to build an efficient system that is best suitable for the environment.
+
+              One of the great things about working in EcoCar is seeing how each subteam works efficiently to develop the best system that will create an autonomous vehicle. This has allowed me to build relationships and be positively influenced.
+          </p>
+             <div class ="tab-titles">
+                 <p class="tab-Links active-link"  onclick="opentab('Education')"> Education </p>
+                 <p class="tab-Links"   onclick="opentab('Experience')" >  Experience  </p>
+                 <p class="tab-Links" onclick="opentab('Skills')"  > Skills </p>
+             </div>
+             <div class="tab-content active-tab"  id="Education">
+               <ul>
+                   <li> <span>Bachelor in Automation Engineering Technology </span> <br>  McMaster University </li>
+                   <li> <span>Chemical Engineering Advanced Diploma. </span> <br> Mohawk College</li>
+                   <li> <span>ACBSP Accredited Business Management Certificate </span> <br> Mohawk College</li>
+                   <li> <span> FANUC CERT handling Tool Operations and programming certificate </span> <br> McMaster University</li>
+
+               </ul>
+             </div>
+             <div class="tab-content" id="Experience">
+                 <ul>
+                     <li> <span> Learning Factory McMaster University            </span> <br> <strong> Team Lead and Research Assistant–(Co-op)</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Jan 2024 - Aug 2024 </i> <br>•	Integrated Industrial Automation into developing a station that allows users to stain and finish walking cane. <br>  •
+                         Programmed Click PLC to communicate with an Arduino controller over Modbus Serial in order to control a DC motor which provides a platform for wooden part of a walking cane to spin on. <br> •	Integrated sensors like thermocouple with PLC programming in order to monitor and control the temperature of station.<br> •	Developed a Human Machine Interface using FactoryTalk view to control temperature of a painting station and speed of motor. <br> Integrated Click PLC with Rockwell PLC over Ethernet TCP/IP to communicate over distance, obtain readings and monitor workstation <br> •
+                         Operated and developed a program to run a CMM (Coordinate Measuring Machine) to test the quality of walking cane wooden parts and maintain required tolerance for production.<br>  •
+                         Developed adhesive dispensing station using Click PLC and Arduino controller that allows for a consistent amount of adhesive to be placed into wooden parts for all products produced. <br> •	Configured C-More Industrial HMI panel to communicate with Click PLC which allows individuals to operate and interact with a workstation. <br> •	Created a smart walking cane team that works on developing and programming a walking cane and enable smart features including sending alerts to emergency contact if an older individual has fallen. <br> •	Developed a water filter system and integrated sensors that monitors the cleanliness of water preventing users from consuming contaminated water. </li>
+
+                     <li> <span> Learning Factory McMaster University                  </span> <br> <strong> Learning Factory Research Assistant –(Co-op)</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>May 2023 - Aug 2023</i> <br> •	Worked with sensors and integrated the concept of internet of things to develop smart walking cane to enable older people navigate more effectively. <br> •
+                         Collaborated with a graphics designer to develop a logo suitable for a walking cane, following the McMaster polices and understanding the limitations associated with branding. <br> •
+                         Designed and developed packaging of a walking cane for product protection and brand identity.<br> •	Operated ABB dual-arm Yumi Collaborative robot and worked on integrated vision camera to identify different parts a brass coupler.   </li>
+                     <li> <span> <strong> Extra Curricular Activities </strong></span> <br> • <i> Smart Systems Team McMaster University </i> 	<br>Created a smart system team that can analyze and monitor data on a product and make decisions based on the data. <br>  •
+                         Lead the smart system team to develop smart walking cane integrating the Concept of Internet of Things (IOT) <br> <br>
+                         <i> McMaster Engineering EcoCar EV Challenge team (HMI sub-team)</i> <br> •	Worked with team members to develop a HMI that will display current status of a vehicle, provide answers to space when parking using data provided by Connected Autonomous Vehicle Team <br>  •	Participated in creating scenarios and simulations for driving assistance features including Cooperative and Adaptive Cruise Control(CACC) and automatic navigation </li>
+                 </ul>
+             </div>
+
+             <div class="tab-content" id="Skills">
+                 <ul>
+                     <li> <span> Relevant Courses and Skills </span> <br> •	CAD design using Autodesk Fusion
+                         •	C++r programming, Object Oriented Programming <br>
+                         •	Program Ladder Logic (PLC) <br>
+                         •	Fundamentals in Marketing <br>
+                         •	Electrical Schematics using Multisim <br>
+                         •	Developed HMI using Lab View <br>
+                     </li>
+
+
+                 </ul>
+             </div>
+
+             </div>
+     </div>
+
     </div>
 
+</div>
 
-<br>
-<p style = "font-family: Times New Roman">  
-    <h2>  Education </h2>
-  
-   
-</p>
-   
-<p style = "font-family: Arial">
+<!---Projects -->
+<div id =" Projects">
+    <div class ="container">
+        <div class = "space">
+           <div  class =" title">  <h1 class="fomart"> My Projects</h1> </div>
 
-    <strong><i>Automation Engineering Technology (Co-op)</i> </strong> program with ACBSP <strong> accredited business  management Component</strong>
-    McMaster University
-    <br>
-    &nbsp;Currently enrolled in level 4 of 4.5 year program at McMaster and Mohawk College
-    <br>
-    &nbsp;Will be awarded a bachelor degree, Chemical Engineering Advanced Diploma and ACPSP Accredited Business Management
-    <br>
-    &nbsp;Great Lakes College of Toronto High school
-    <br>
-    </p>
+            <div class= "Project-list" > <h2 class ="sub-title"> Painting Station </h2>  </div>
+            <div class= "Project-list-2" >  <img src ="paintSt.png" align ="right">
+                    <p>  One  of the steps involved in the production of walking is to stain and spray the wood,<br>
+                        this lead to creating a system that allows the three part wood to spin while changing <br>
+                        the speed as desired, detect if the door is open and set the fan for drying,
+                        while detecting desired <br> temperature in the system to determine if the fan is be switched off or on.<br>
+                        Using Programmable Logic Controllers (PLC) I was able to implement  these function. <br>
+                        As seen in the picture on the right many alterations, implementations and testing of <br>different devices such as
+                        initially using a stepper motor and switching to <br> DC  motor for better heat resistance,
+                        adding relays to control the ON/OFF of the motors.
+                       <br> For a better interaction of the machine a C-more EA9 series HMI is <br>used to control the speed and switch the system Off/On
+                    </p> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
 
-    <p style ="font-family: Times New Roman">
-    <h2>  Experience (Work) </h2>
-    </p>
+            <div class= "Project-list" > <h2 class ="sub-title"> Water Filter System </h2>  </div>
+            <div class= "Project-list-2" >  <img src ="filter.png" align ="right">
+                <p>
+                    One of the projects worked in the learning factory at McMaster University is the <br> water filter system.
+                    Using activated charcoal(charcoal soaked in 25% salt water solution),
+                    <br>to remove particles and chemicals present in water and an ultrafiltration which eliminates <br> any pathogens that is
+                    virus and bacteria present in the water. In order to reduce cost and <br>enhance flexibility, a water filter was designed and
+                    3D printed. The process of this system as <br>shown by the picture on the right is,  water goes into the filter, through activated charcoal,
+                    <br>through cotton to remove charcoal residue and through a mesh.  The outlet of the<br> filter goes through an ultrafiltration (UV light), which
+                    goes through a valve. <br> In order to monitor this system and ensure proper filtration, turbidity sensor was added <br> before filtration and after
+                    filtration. A UV sensor was placed beside the UV light to <br>ensure it is ON when operating, and if not so the valve would close
+                    preventing users from<br> consuming the water.
 
-    <p style="font-family: Times New Roman; font-size: 20px;">
-      &nbsp;<strong> <i>Team Lead - Learning Factory McMaster University </i></strong> (Co-op)
-      </p>
-    <p style = "font-family: Arial">
-      &nbsp;Started a smart systems club in McMaster University 
-      <br>
-      &nbsp;Lead the Smart systems club 
-      <br>
-      &nbsp;Assisted in managing operations of the learning factory
-      <br>
-      &nbsp;Operated the <strong> CMM</strong>  (Cordinate Measuring Machine)
-      <br>
-      <a href ="https://septlearningfactory.com/"> Sept learning factory </a>
-    </p>
-    <p style="font-family: Times New Roman; font-size: 20px;">
-      &nbsp;<strong><I>Eco-Car Research Assistant </strong></I> (Co-op)
-      </p>
-      <p style="font-family: Arial">
-      &nbsp;Collaborated and supported engineering Leads for development Implemenation
-      <br>
-      &nbsp;Using a method of industry standard testing development, <strong> Hardware-in-the loop HIL</strong>
-      <br>
-      &nbsp;Created a simulation of a residentail area that depicts real world scneario of house
-      <br>
-      &nbsp;Built analytical and troubleshooting skills by going through programs, models and software.
-      <br>
-      <a href ="https://www.macecocar.ca/"> Eco Car EV </a>
-      </p>
-      <p style="font-family: Times New Roman; font-size: 20px;">
-      &nbsp;<strong> <i>Learnig Factory-Research Assistant</i> </strong> (Co-op)
-    </p>
-    <p style="font-family: Arial">
-      &nbsp;Worked with graphics designer to design a logo a product(walking cane)
-      <br>
-      &nbsp;Designed a packaging box for a walkinig cane
-      <br>
-      &nbsp;Researched on marketing of a walking cane
-      <br>
-      <a href ="https://septlearningfactory.com/"> Sept learning factory </a>
-    </p>
-      
-    <p style="font-family: Times new Roman">
-      <h2>  Hobbies </h2> </p>
-      <p style="font-family: Arial">
-      &nbsp;A beginner in Tennis
-      <br>
-      &nbsp;Interested in pottery 
-      <br>
-      &nbsp;Play badnminton occassionally
+                </p> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
+            </div>
+            <div class= "Project-list" > <h2 class ="sub-title"> Dispensing Station  </h2>  </div>
+            <div class= "Project-list-2" >  <img src ="dispense.png" align ="right">
+                <p>
+                    In production of walking cane in the learning factory at McMaster University, on of the steps <br>
+                    taken is to glue brass couplers to the cane. In the process of doing so, there was an inconsistent <br>
+                    amount of glue which has lead damage to some wooden cane parts, with some cane not strong enough <br>due
+                    little adhesive dispensed into the cane parts. In order to eliminate this problem, a dispensing station <br>
+                    was integrated. With a set amount of time programmed with PLC and displayed on thin client for users to interact
+                    and produce, the dispensing station eliminates the issue of inconsistent use of adhesive in production and aids
+                    to maintain quality.
 
-  </p>
+                </p> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br>
+            </div>
+            <div class= "Project-list" > <h2 class ="sub-title"> Walking Cane </h2>  </div>
+            <div class= "Project-list-2" >  <img src ="caneBox.png" align ="right">
+                <p>
+                    A walking cane is as old as time but very little technology are implemented in it.
+                    Working with the learning factory,  I started developing ways to make a cane smart.
+                    The first step to this was understanding the production of a regular cane, I made
+                    3D CAD models of prototype, added pressure sensor to the cane to read values of
+                    how much force an individual is putting on the cane this will allow to know if
+                    someone’s health condition is getting better or worse. Constant development
+                    are made to produce a better product of cane hence a club under McMaster Bachelor
+                    of Technology Association was formed. This allowed for sale of the product and
+                    continuity of production of the smart walking cane.
 
 
-    
+                </p><br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br>
+            </div>
+            <div class= "Project-list" > <h2 class ="sub-title"> Design of Packaging Box </h2>  </div>
+            <div class= "Project-list-2" >  <img src ="box.png" align ="right">
+                <p>
+                    Packaging is an important element for brand identity, but this is also a design
+                    process that can easily get complicated. With many different alterations
+                    of a custom box that will reduce cost but still effectively  display
+                    the desired elements that stand for the product and the brand.
+                    Worked with a graphic designer that interpreted the vision of the product
+                    through the logo with the name of the brand called ‘SolidStep.’
+                    As seen from the first upper picture a prototype of what the packaging is meant
+                    to look was produced, following university polices a finial product was produced.
 
-   <footer>
-    <p>
-    &copy;Faustina Onyinye
 
-    </p>
+                </p>
+            </div>
 
-   </footer>
-</p>
+        </div>
 
-   
+    </div>
+</div>  <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br>
+<!---Contact --->
+
+<div id="contact ">
+    <div class="container">
+        <div class ="row ">
+            <div class="contact-left">
+                <h1 class="subtitle"> Contact Me</h1>
+                <p>
+                    ugwuedef@mcmaster.ca <br>
+                    <a href="https://www.linkedin.com/in/faustina-ugwuede-b06b31220/"> Linkedin </a>
+                    <div class="socialIcon"> </div>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+         let tablinks = document.getElementsByClassName("tab-Links");
+         let tabcontent = document.getElementsByClassName("tab-content");
+           function opentab(tabName) {
+            for( let tablink of tablinks){
+             tablink.classList.remove("active-link");
+                }
+                        for(let tabcontents of tabcontent) {
+                      tabcontents.classList.remove("active-tab");
+                       }
+                          event.currentTarget.classList.add("active-link");
+                         document.getElementById(tabName).classList.add("active-tab")
+
+}
+
+</script>
+
+<script>
+    let sidemenus = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenus.style.right="0";
+
+    }
+    function closemenu(){
+        sidemenus.style.right="-200px";
+
+    }
+
+</script>
+
 
 
 </body>
-
-
 </html>
